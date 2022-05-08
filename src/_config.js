@@ -6,7 +6,7 @@ export const site = {
     home: process.dev ? "Dev" : "Prod"
 }
 export const app = {
-    title: "Template"
+    title: "Clash of Clans"
 }
 export const links = [
     {
