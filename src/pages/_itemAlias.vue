@@ -4,12 +4,7 @@
       <img :src="item.img" :alt="item.descr" />
       <h1 style="color: #ffffff" class="title">{{ item.title }}</h1>
       <p>{{ item.descr }}</p>
-      <div style="margin: 20px 0; border-radius: 14px" class="card-stats">
-        <div v-for="(stat, index) in item.info" :key="index" class="one-third">
-          <div class="stat-value">{{ stat.value }}</div>
-          <div class="stat">{{ stat.title }}</div>
-        </div>
-      </div>
+      <CardStats :item="item" style="margin: 20px 0; border-radius: 14px" />
       <div>
         <router-link to="/" class="btn btnPrimary">Back to Home</router-link>
       </div>
@@ -19,8 +14,12 @@
 
 <script>
 import items from '@/seeders/items'
+import CardStats from '@/components/UI/CardStats.vue'
 
 export default {
+  components: {
+    CardStats
+  },
   data() {
     return {
       item: null
