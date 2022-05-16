@@ -14,7 +14,7 @@
 
 <script>
 import items from '@/seeders/items'
-import CardStats from '@/components/UI/CardStats.vue'
+import CardStats from '@/components/UI/Card/CardStats.vue'
 
 export default {
   components: {
@@ -27,29 +27,11 @@ export default {
   },
   created() {
     const alias = this.$route.params.itemAlias
-    const item = items.find(el => el.alias === alias)
-    this.item = item
-
-    // this.item = this.checkAlias(items, alias)
-    // this.redirectToNotFound(item)
-    // console.log(this.item) //Не понимаю почему здесь после выполнения функции всегда undefined
-    //хотя если выводить шаги в функции, то она возвращает или объект el или null
-    //не понимаю, почему тогда item в data не становится тем, чем должен по результату функции
-  },
-  methods: {
-    checkAlias(items, alias) {
-      items.find(el => {
-        if (el.alias === alias) {
-          return el
-        }
-        return null
-      })
-    },
-    redirectToNotFound(item) {
-      if (item === null) {
-        this.$router.push({ name: '404' })
-      }
+    const item = alias && items.find(el => el.alias === alias)
+    if (!item) {
+      this.$router.push({ name: '404' })
     }
+    this.item = item
   }
 }
 </script>

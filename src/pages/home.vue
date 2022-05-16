@@ -23,8 +23,8 @@
 
 <script>
 import items from '@/seeders/items'
-import Card from '@/components/UI/Card'
-import CardStats from '@/components/UI/CardStats.vue'
+import Card from '@/components/UI/Card/Card'
+import CardStats from '@/components/UI/Card/CardStats.vue'
 
 import 'vue3-carousel/dist/carousel.css'
 import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
