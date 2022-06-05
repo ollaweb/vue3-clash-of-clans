@@ -1,6 +1,6 @@
 # SPA - Clash Of Clans (Vue 3)
 
-[Demo to test my project](https://github.com/ollaweb/vue3-clash-of-clans)
+[Demo to test my project](https://ollaweb.github.io/vue3-clash-of-clans)
 
 ## Review
 
@@ -20,6 +20,7 @@ Project made by learning Vue 3 [in this course.](https://tocode.ru/courses/vuejs
 - using options API;
 - using vue-router;
 - dynamic redrawing without page reloading;
+- using vue3-carousel;
 - reusing components;
 
 ## Project setup
