@@ -4,7 +4,7 @@
 
 ## Review
 
-![Look at this lovely design](https://github.com/ollaweb/vue3-clash-of-clans/blob/main/Clach-of-Clans.JPG)
+![Look at this lovely design](https://github.com/ollaweb/vue3-clash-of-clans/blob/main/Clash-of-Clans.JPG)
 
 ## Demonstration
 
